@@ -1,4 +1,4 @@
 import Layout from "./Layout";
-import Home from "./Home";
+import LevelSelection from "./LevelSelection";
 
-export { Layout, Home };
+export { Layout, LevelSelection };

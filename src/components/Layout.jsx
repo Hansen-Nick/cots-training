@@ -25,7 +25,7 @@ import {
   Bars2Icon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
-import collectionTypes from "../constants/collectionTypes";
+import { homeCollectionTypes } from "../constants/collectionTypes";
 
 // profile menu component
 const profileMenuItems = [
@@ -112,7 +112,7 @@ function ProfileMenu() {
 }
 
 // nav list menu
-const navListMenuItems = collectionTypes.map((type) => {
+const navListMenuItems = homeCollectionTypes.map((type) => {
   return { title: type.name, url: type.url };
 });
 
@@ -226,7 +226,7 @@ export default function ComplexNavbar() {
           },
         }) => {
           setHeaderLogo(
-            `https://cots-strapi-production.up.railway.app/${image.data[0].attributes.url}`
+            `https://cots-strapi-production.up.railway.app${image.data[0].attributes.url}`
           );
           console.log(image.data[0].attributes);
         }

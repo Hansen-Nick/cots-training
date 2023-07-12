@@ -6,7 +6,7 @@ export default function LevelCard({ type }) {
     <Card
       color="blue"
       variant="gradient"
-      className="w-full md:w-1/3 lg:w-1/4  p-2 my-5 mx-4 flex"
+      className="w-full md:w-1/3 lg:w-1/4  p-2 my-5 mx-4 flex mt-6"
     >
       <CardFooter className="flex flex-col h-full">
         <Link to={type.url} className="flex flex-col h-full">

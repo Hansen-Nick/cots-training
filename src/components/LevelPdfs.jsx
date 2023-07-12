@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function LevelPdfs() {
   const [pdfInfo, setPdfInfo] = useState([]);
-  const level = window.location.pathname.split("/")[1];
+  const level = window.location.pathname.split("/")[2];
 
   useEffect(() => {
     axios
