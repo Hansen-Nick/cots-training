@@ -9,7 +9,9 @@ export default function QuizPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/quizzes/${id}?populate=*`)
+      .get(
+        `https://cots-strapi-production.up.railway.app/api/quizzes/${id}?populate=*`
+      )
       .then(({ data }) => {
         setQuestionData({
           ...data.data.attributes.questionData,

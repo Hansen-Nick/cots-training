@@ -12,7 +12,7 @@ export default function PdfCard({ info }) {
     >
       <CardFooter className="flex flex-col h-full p-1">
         <a
-          href={`http://localhost:1337${info.url}`}
+          href={`https://cots-strapi-production.up.railway.app/${info.url}`}
           className="flex flex-col h-full"
         >
           <Button
@@ -24,7 +24,7 @@ export default function PdfCard({ info }) {
           >
             <Document
               className="flex justify-center w-full"
-              file={`http://localhost:1337${info.url}`}
+              file={`https://cots-strapi-production.up.railway.app/${info.url}`}
             >
               <Page
                 pageNumber={1}

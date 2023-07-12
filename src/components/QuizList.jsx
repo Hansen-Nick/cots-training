@@ -8,7 +8,9 @@ export default function QuizList() {
   const [quizzes, setQuizzes] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/quizzes?populate=*`)
+      .get(
+        `https://cots-strapi-production.up.railway.app/api/quizzes?populate=*`
+      )
       .then(({ data }) => {
         setQuizzes(data.data);
         console.log(data.data);

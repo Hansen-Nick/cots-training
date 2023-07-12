@@ -214,7 +214,9 @@ export default function ComplexNavbar() {
       () => window.innerWidth >= 960 && setIsNavOpen(false)
     );
     axios
-      .get("http://localhost:1337/api/header-logos/1?populate=*")
+      .get(
+        "https://cots-strapi-production.up.railway.app/api/header-logos/1?populate=*"
+      )
       .then(
         ({
           data: {
@@ -223,7 +225,9 @@ export default function ComplexNavbar() {
             },
           },
         }) => {
-          setHeaderLogo(`http://localhost:1337${image.data[0].attributes.url}`);
+          setHeaderLogo(
+            `https://cots-strapi-production.up.railway.app/${image.data[0].attributes.url}`
+          );
           console.log(image.data[0].attributes);
         }
       )

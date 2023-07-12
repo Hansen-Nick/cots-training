@@ -8,7 +8,9 @@ export default function LevelPdfs() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:1337/api/${level}-documents?populate=*`)
+      .get(
+        `https://cots-strapi-production.up.railway.app/api/${level}-documents?populate=*`
+      )
       .then(({ data }) => {
         const info = data.data.map((item) => {
           console.log(item);
