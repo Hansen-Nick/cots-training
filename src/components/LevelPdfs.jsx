@@ -5,11 +5,12 @@ import axios from "axios";
 export default function LevelPdfs() {
   const [pdfInfo, setPdfInfo] = useState([]);
   const level = window.location.pathname.split("/")[2];
+  console.log(level);
 
   useEffect(() => {
     axios
       .get(
-        `https://cots-strapi-production.up.railway.app/api/${level}-documents?populate=*`
+        `https://cots-strapi-production.up.railway.app/api/ws-1-documents?populate=*`
       )
       .then(({ data }) => {
         const info = data.data.map((item) => {
@@ -19,6 +20,7 @@ export default function LevelPdfs() {
             name: item.attributes.Name,
           };
         });
+        console.log("info here", info);
         setPdfInfo(info);
       })
       .catch((err) => console.log(err));
