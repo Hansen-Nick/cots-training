@@ -2,6 +2,7 @@ import { Card, CardFooter, Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
 export default function LevelCard({ type }) {
+  console.log("his vard");
   return (
     <Card
       color="blue"

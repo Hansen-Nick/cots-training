@@ -2,7 +2,7 @@ const homeCollectionTypes = [
   { name: "Baby Program", url: "baby-program" },
   { name: "Water Safety Program", url: "water-safety-program" },
   { name: "Stroke Program", url: "stroke-program" },
-  { name: "PODS", url: "pods" },
+  { name: "PODS", url: "pod" },
   { name: "Coach's Corner", url: "coachs-corner" },
 ];
 

@@ -114,10 +114,6 @@ function App() {
             path="/water-safety-program/WS3/videos"
             element={<LevelVideos />}
           />
-          <Route
-            path="/water-safety-program/WS8UP/videos"
-            element={<LevelVideos />}
-          />
 
           {/* STROKE */}
           <Route path="/stroke-program" element={<LevelSelection />} />
@@ -130,6 +126,10 @@ function App() {
           <Route path="/stroke-program/ST1/videos" element={<LevelVideos />} />
           <Route path="/stroke-program/ST2/videos" element={<LevelVideos />} />
           <Route path="/stroke-program/ST3/videos" element={<LevelVideos />} />
+
+          {/* OTHER */}
+          <Route path="/coachs-corner" element={<LevelPdfs />} />
+          <Route path="/pod" element={<LevelPdfs />} />
         </Routes>
       </div>
     </BrowserRouter>

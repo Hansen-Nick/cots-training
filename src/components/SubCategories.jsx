@@ -10,7 +10,7 @@ export default function SubCatsLayout() {
     { name: "Baby Program", url: "baby-program" },
     { name: "Water Safety Program" },
     { name: "Stroke Program", url: "stroke-program" },
-    { name: "PODS", url: "pods" },
+    { name: "PODS", url: "pod" },
     { name: "Coach's Corner", url: "Coachs-Corner" },
   ];
   return (
