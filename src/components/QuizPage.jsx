@@ -17,14 +17,11 @@ export default function QuizPage() {
           ...data.data.attributes.questionData,
           quizTitle: data.data.attributes.QuizTitle,
         });
-        console.log(data.data.attributes);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  console.log("questionData", questionData);
   if (Object.keys(questionData).length === 0) {
-    console.log("hit loading");
     return <p>Loading...</p>;
   }
 

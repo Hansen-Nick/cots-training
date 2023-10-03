@@ -13,7 +13,6 @@ export default function QuizList() {
       )
       .then(({ data }) => {
         setQuizzes(data.data);
-        console.log(data.data);
       })
       .catch((err) => console.log(err));
   }, []);

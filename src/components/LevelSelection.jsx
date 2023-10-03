@@ -4,7 +4,6 @@ import LevelCard from "./LevelCard";
 export default function LevelSelection() {
   const relURL = window.location.pathname.split("/")[1];
   if (relURL === "") {
-    console.log("rel url");
     return (
       <div className="flex flex-wrap justify-around max-w-screen-xl mx-auto my-0">
         {homeCollectionTypes.map((type) => (
@@ -13,8 +12,6 @@ export default function LevelSelection() {
       </div>
     );
   }
-
-  console.log("o");
 
   return (
     <div className="flex flex-wrap justify-around max-w-screen-xl mx-auto my-0">

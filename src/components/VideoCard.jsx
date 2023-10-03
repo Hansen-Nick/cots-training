@@ -14,7 +14,6 @@ export default function VideoCard({ info }) {
       autoplay: 1,
     },
   };
-  console.log(info);
   return (
     <Card
       color="blue"

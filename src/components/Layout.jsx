@@ -215,7 +215,7 @@ export default function ComplexNavbar() {
     );
     axios
       .get(
-        "https://cots-strapi-production.up.railway.app/api/header-logos/1?populate=*"
+        "https://cots-strapi-production.up.railway.app/api/header-logos/2?populate=*"
       )
       .then(
         ({
@@ -228,7 +228,6 @@ export default function ComplexNavbar() {
           setHeaderLogo(
             `https://cots-strapi-production.up.railway.app${image.data[0].attributes.url}`
           );
-          console.log(image.data[0].attributes);
         }
       )
       .catch((err) => console.log(err));

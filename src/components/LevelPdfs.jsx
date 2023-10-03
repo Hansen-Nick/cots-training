@@ -5,7 +5,6 @@ import axios from "axios";
 export default function LevelPdfs() {
   const [pdfInfo, setPdfInfo] = useState([]);
   let level = window.location.pathname;
-  console.log(level);
 
   if (level != "/pod" && level != "/coachs-corner") {
     level = level.split("/")[2];
@@ -26,7 +25,6 @@ export default function LevelPdfs() {
   } else {
     levelUrl = level;
   }
-  console.log(levelUrl);
 
   useEffect(() => {
     axios
@@ -35,13 +33,11 @@ export default function LevelPdfs() {
       )
       .then(({ data }) => {
         const info = data.data.map((item) => {
-          console.log(item);
           return {
             url: item.attributes.Document.data.attributes.url,
             name: item.attributes.Name,
           };
         });
-        console.log("info here", info);
         setPdfInfo(info);
       })
       .catch((err) => console.log(err));

@@ -2,7 +2,6 @@ import { Card, CardFooter, Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
 export default function QuizCard({ info }) {
-  console.log("info", info.id);
   return (
     <Card
       color="blue"
