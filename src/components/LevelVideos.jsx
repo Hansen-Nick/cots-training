@@ -12,7 +12,7 @@ export default function LevelPdfs() {
     levelUrl = `ST-${level.split("")[2]}`;
     console.log("levelurl", `ST-${level.split("")[2]}`);
   } else if (level == "ADVPT") {
-    levelUrl = `ADVPT-2`;
+    levelUrl = `ADVPT`;
   } else if (level == "/coachs-corner") {
     levelUrl = "coach-corner";
   } else if (level == "/pod") {
