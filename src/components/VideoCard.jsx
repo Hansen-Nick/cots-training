@@ -32,9 +32,9 @@ export default function VideoCard({ info }) {
             videoId={info.embedId}
             opts={opts}
             onReady={onPlayerReady}
-            className="absolute h-[calc(100%-75px)] w-full"
+            className="absolute h-[calc(100%-90px)] w-full"
           />
-          <span className="absolute bottom-6 left-0 right-0 mt-3 text-xl ">
+          <span className="absolute bottom-4 left-0 right-0 mt-3 text-xl ">
             {info.name}
           </span>
         </Button>
